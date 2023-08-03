@@ -17,6 +17,27 @@ public interface iAnimal {
     public int getMaxTemperature();
 }
 
-public class Leopard {
+public class Leopard implements iAnimal{
 
+    private int idTag;
+
+    public String getAnimalType() {
+        return "Leopard";
+    }
+
+    public int getIdTag() {
+        return idTag;
+    }
+
+    public void setIdTag(int anIdTag) {
+        idTag = anIdTag;
+    }
+
+    public int getMinTemperature() {
+        return -25;
+    }
+
+    public int getMaxTemperature() {
+        return 70;
+    }
 }
